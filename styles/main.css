@@ -2,6 +2,8 @@
 :root {
   --background-color: #fafafa;
   --black-color: #232631;
+  --gray-color: #656565;
+  --cream-color: #fdc886;
 }
 
 * {
@@ -19,7 +21,7 @@ button:focus {
 }
 
 body {
-  background: var(--background-color);
+  background: var(--background-color) !important;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -27,4 +29,59 @@ body {
   color: var(--black-color) !important;
   font-weight: 500;
   margin-right: 10px;
+}
+.navbar .nav-search input ::placeholder,
+.navbar .nav-search input ::-webkit-input-placeholder,
+.navbar .nav-search input ::-moz-placeholder {
+  font-weight: 500 !important;
+  color: #858585 !important;
+}
+
+#ads-section .slick-item {
+  position: relative;
+}
+#ads-section .slick-item .card-absolute {
+  position: absolute !important;
+  opacity: 0 !important;
+  transition: all 0.7s ease-in-out;
+  left: 0;
+  top: 20%;
+}
+#ads-section .slick-item .card-absolute .ads-card {
+  border: 0;
+  border-radius: 24px;
+  padding-right: 7rem;
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-star {
+  color: #ffb800;
+  font-size: 18px;
+  font-weight: 600;
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-total {
+  color: var(--gray-color) !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-price {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-color);
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-location {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+#ads-section .slick-item .card-absolute .ads-card .ads-info span {
+  color: var(--gray-color);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+#ads-section .slick-active .card-absolute {
+  opacity: 1 !important;
 }/*# sourceMappingURL=main.css.map */

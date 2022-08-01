@@ -13,9 +13,12 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- Fontawesome -->
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css" />
+    <!-- Slick -->
+    <link rel="stylesheet" href="./vendor/slick/slick.css" />
+    <link rel="stylesheet" href="./vendor/slick/slick-theme.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg mb-4">
       <div class="container py-3">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -65,12 +68,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex ms-auto">
-            <div class="input-group me-3 bg-white">
+            <div class="nav-search input-group me-3 py-1 px-2 bg-white rounded">
               <span
-                class="input-group-text bg-transparent border-0"
+                class="input-group-text bg-transparent border-0 me-0 pe-0"
                 id="addon-search"
               >
-                <i class="fa fa-search"></i>
+                <img src="./assets/icon/ic-search.svg" alt="" />
               </span>
               <input
                 type="text"
@@ -80,12 +83,97 @@
                 aria-describedby="addon-search"
               />
             </div>
-            <button class="btn btn-login" type="button">LogIn</button>
+            <button class="btn btn-login" type="button">Login</button>
           </div>
         </div>
       </div>
     </nav>
+
+    <section id="ads-section">
+      <div class="container">
+        <div class="ads-slick">
+          <div class="slick-item ps-5">
+            <img src="./assets/img/ill-ads-1.png" width="900" alt="" />
+            <div class="card-absolute">
+              <div class="card ads-card">
+                <div class="card-body">
+                  <p class="ads-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    5.0
+                    <span class="ads-total">(5.2K+)</span>
+                  </p>
+                  <h3 class="ads-title">Padang Restaurant</h3>
+                  <p class="ads-price">IDR 49.999 - IDR 560.000</p>
+                  <p class="ads-location">
+                    <i class="fa fa-location-arrow"></i>
+                    Padang, Indonesia
+                  </p>
+                  <a href="#" class="btn btn-cream mb-3">
+                    Make Reservation
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                  <p class="ads-info d-flex">
+                    <img src="./assets/icon/ic-info-square.svg" alt="" />
+                    <span>No extra cost</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-item ps-5">
+            <img src="./assets/img/ill-ads-2.png" width="900" alt="" />
+            <div class="card-absolute">
+              <div class="card ads-card">
+                <div class="card-body">
+                  <p class="ads-star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    5.0
+                    <span class="ads-total">(5.2K+)</span>
+                  </p>
+                  <h3 class="ads-title">Warteg Barokah</h3>
+                  <p class="ads-price">IDR 12.999 - IDR 100.000</p>
+                  <p class="ads-location">
+                    <i class="fa fa-location-arrow"></i>
+                    Tegal, Indonesia
+                  </p>
+                  <a href="#" class="btn btn-cream mb-3">
+                    Make Reservation
+                    <i class="fa fa-chevron-right"></i>
+                  </a>
+                  <p class="ads-info d-flex">
+                    <img src="./assets/icon/ic-info-square.svg" alt="" />
+                    <span>No extra cost</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jquery -->
+    <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap 5 -->
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick -->
+    <script src="./vendor/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".ads-slick").slick({
+          infinite: true,
+          slidesToShow: 1,
+          variableWidth: true,
+        });
+      });
+    </script>
   </body>
 </html>
