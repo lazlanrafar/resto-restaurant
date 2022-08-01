@@ -1,8 +1,44 @@
 @import url("./fonts.css");
+// @import url("./buttons.css");
+
+:root {
+  --background-color: #fafafa;
+  --black-color: #232631;
+}
+
+// Reset Styles
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: poopins;
+}
+
+input,
+button {
+  &:hover,
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// body
+body {
+  background: var(--background-color);
+}
+// Navbar
+
+.navbar {
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 16px;
+        color: var(--black-color) !important;
+        font-weight: 500;
+        margin-right: 10px;
+      }
+    }
+  }
 }

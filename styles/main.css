@@ -1,7 +1,30 @@
 @import url("./fonts.css");
+:root {
+  --background-color: #fafafa;
+  --black-color: #232631;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: poopins;
+}
+
+input:hover, input:focus,
+button:hover,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  background: var(--background-color);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 16px;
+  color: var(--black-color) !important;
+  font-weight: 500;
+  margin-right: 10px;
 }/*# sourceMappingURL=main.css.map */
