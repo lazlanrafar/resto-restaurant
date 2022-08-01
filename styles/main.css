@@ -21,6 +21,10 @@ button:focus {
   box-shadow: none !important;
 }
 
+section {
+  margin-bottom: 5rem !important;
+}
+
 body {
   background: var(--background-color) !important;
 }
@@ -28,7 +32,7 @@ body {
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 16px;
   padding: 0;
-  margin-right: 1.2rem;
+  margin-right: 2rem;
   color: var(--black-color) !important;
   font-weight: 500;
   position: relative;
@@ -96,4 +100,54 @@ body {
 }
 #ads-section .slick-active .card-absolute {
   opacity: 1 !important;
+}
+
+#why-us-section .whyus-subtitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-color);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+#why-us-section .whyus-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 41px;
+}
+#why-us-section .card-whyus {
+  border: 0;
+  border-radius: 24px;
+  text-decoration: none;
+}
+#why-us-section .card-whyus-img {
+  margin: 24px 0;
+}
+#why-us-section .card-whyus-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 12px;
+}
+#why-us-section .card-whyus-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-color);
+  margin-bottom: 40px;
+}
+#why-us-section .card-whyus-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black-color);
+  border: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  padding: 1.3rem 0;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+#why-us-section .card-whyus:hover .card-whyus-link {
+  background: var(--cream-color) !important;
 }/*# sourceMappingURL=main.css.map */
