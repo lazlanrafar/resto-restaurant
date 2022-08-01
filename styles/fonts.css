@@ -23,3 +23,22 @@
   src: url("../fonts/poppins/Poppins-Bold.ttf");
   font-weight: 700;
 }
+.text-title-black {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--black-color);
+}
+
+.text-title-blue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-color);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.text-title-gray {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-color);
+}

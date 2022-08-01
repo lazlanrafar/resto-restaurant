@@ -102,18 +102,8 @@ body {
   opacity: 1 !important;
 }
 
-#why-us-section .whyus-subtitle {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--blue-color);
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-#why-us-section .whyus-title {
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--black-color);
-  margin-bottom: 41px;
+#why-us-section .text-title-black {
+  margin-bottom: 41px !important;
 }
 #why-us-section .card-whyus {
   border: 0;
@@ -150,4 +140,11 @@ body {
 }
 #why-us-section .card-whyus:hover .card-whyus-link {
   background: var(--cream-color) !important;
+}
+
+#most-popular .text-title-black {
+  margin-bottom: 20px !important;
+}
+#most-popular .text-title-gray {
+  margin-bottom: 56px !important;
 }/*# sourceMappingURL=main.css.map */

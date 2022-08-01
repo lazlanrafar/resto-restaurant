@@ -75,7 +75,7 @@ body {
   }
 }
 
-// ADS Section
+// Ads Section
 #ads-section {
   .slick-item {
     position: relative;
@@ -135,18 +135,8 @@ body {
 
 // Why Us Section
 #why-us-section {
-  .whyus-subtitle {
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--blue-color);
-    text-transform: uppercase;
-    margin-bottom: 6px;
-  }
-  .whyus-title {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--black-color);
-    margin-bottom: 41px;
+  .text-title-black {
+    margin-bottom: 41px !important;
   }
 
   .card-whyus {
@@ -187,6 +177,18 @@ body {
       .card-whyus-link {
         background: var(--cream-color) !important;
       }
+    }
+  }
+}
+
+// Most Popular Section
+#most-popular {
+  .text-title {
+    &-black {
+      margin-bottom: 20px !important;
+    }
+    &-gray {
+      margin-bottom: 56px !important;
     }
   }
 }
