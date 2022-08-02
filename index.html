@@ -638,6 +638,7 @@
               <img
                 src="./assets/img/ill-expert-chef-1.png"
                 class="expert-chef-photo"
+                id="expert-chef-photo"
                 alt=""
               />
               <div class="expert-chef-experience">
@@ -648,20 +649,26 @@
                       src="./assets/img/ill-experience.svg"
                       alt=""
                     />
-                    <p class="expert-chef-experience-year">12 Years</p>
+                    <p
+                      class="expert-chef-experience-year"
+                      id="expert-chef-experience-year"
+                    >
+                      12 Years
+                    </p>
                     <p class="expert-chef-experience-title">Experience</p>
                   </div>
                 </div>
               </div>
               <div class="expert-chef-restaurant">
                 <div class="card">
-                  <div class="card-body d-flex">
+                  <div class="card-body d-flex align-items-center">
                     <img
                       class="expert-chef-restaurant-img"
+                      id="expert-chef-restaurant-img"
                       src="./assets/img/ill-expert-chef-restaurant-1.png"
                       alt=""
                     />
-                    <div class="ms-2">
+                    <div class="ms-3">
                       <p class="expert-chef-restaurant-text">
                         Chef at restaurant:
                       </p>
@@ -680,7 +687,7 @@
               <h2 class="text-title-black">Expert Chefs in Fuddy</h2>
 
               <div
-                onclick="setActiveExpertChef(this)"
+                onclick="setActiveExpertChef(this,1, '12 Years')"
                 class="card expert-chef-item expert-chef-active"
               >
                 <div
@@ -701,7 +708,7 @@
                 </div>
               </div>
               <div
-                onclick="setActiveExpertChef(this)"
+                onclick="setActiveExpertChef(this,2, '11 Years')"
                 class="card expert-chef-item"
               >
                 <div
@@ -722,7 +729,7 @@
                 </div>
               </div>
               <div
-                onclick="setActiveExpertChef(this)"
+                onclick="setActiveExpertChef(this,3, '15 Years')"
                 class="card expert-chef-item"
               >
                 <div
@@ -743,7 +750,7 @@
                 </div>
               </div>
               <div
-                onclick="setActiveExpertChef(this)"
+                onclick="setActiveExpertChef(this,4, '18 Years')"
                 class="card expert-chef-item"
               >
                 <div
@@ -824,7 +831,7 @@
       }
 
       // Expert Chef Section
-      function setActiveExpertChef(params) {
+      function setActiveExpertChef(params, num, year) {
         document
           .querySelectorAll(".expert-chef-active")
           .forEach(function (params) {
@@ -833,7 +840,22 @@
 
         params.classList.add("expert-chef-active");
 
-        // console.log(document.querySelectorAll(".expert-chef-active"));
+        document.getElementById("expert-chef-experience-year").innerHTML = year;
+        let chefImage = document.getElementById("expert-chef-photo");
+        switch (num) {
+          case 1:
+            chefImage.src = "./assets/img/ill-expert-chef-1.png";
+            break;
+          case 2:
+            chefImage.src = "./assets/img/ill-expert-chef-2.jpg";
+            break;
+          case 3:
+            chefImage.src = "./assets/img/ill-expert-chef-3.jpg";
+            break;
+          case 4:
+            chefImage.src = "./assets/img/ill-expert-chef-4.jpg";
+            break;
+        }
       }
     </script>
   </body>

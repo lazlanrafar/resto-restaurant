@@ -290,6 +290,7 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 24px;
+  height: 840px;
 }
 #expert-chef .left-content .expert-chef-experience {
   position: absolute;
@@ -328,10 +329,30 @@ body {
   border-radius: 24px;
 }
 #expert-chef .left-content .expert-chef-restaurant .card .card-body {
-  padding: 18px !important;
+  padding: 18px 24px 18px 18px !important;
 }
 #expert-chef .left-content .expert-chef-restaurant-img {
-  width: 99px;
+  height: 99px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#expert-chef .left-content .expert-chef-restaurant-text {
+  font-size: 16px;
+  color: var(--gray-color);
+  margin-bottom: 4px;
+}
+#expert-chef .left-content .expert-chef-restaurant-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 24px;
+}
+#expert-chef .left-content .expert-chef-restaurant-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--cream-color);
+  margin-bottom: 0;
+  text-decoration: none;
 }
 #expert-chef .right-content .text-title-black {
   margin-bottom: 32px;

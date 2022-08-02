@@ -357,6 +357,7 @@ body {
         width: 100%;
         object-fit: cover;
         border-radius: 24px;
+        height: 840px;
       }
 
       &-experience {
@@ -399,12 +400,31 @@ body {
           border-radius: 24px;
 
           .card-body {
-            padding: 18px !important;
+            padding: 18px 24px 18px 18px !important;
           }
         }
 
         &-img {
-          width: 99px;
+          height: 99px !important;
+          object-fit: cover;
+        }
+        &-text {
+          font-size: 16px;
+          color: var(--gray-color);
+          margin-bottom: 4px;
+        }
+        &-title {
+          font-size: 18px;
+          font-weight: 600;
+          color: var(--black-color);
+          margin-bottom: 24px;
+        }
+        &-link {
+          font-size: 16px;
+          font-weight: 600;
+          color: var(--cream-color);
+          margin-bottom: 0;
+          text-decoration: none;
         }
       }
     }
