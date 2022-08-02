@@ -22,7 +22,7 @@ button:focus {
 }
 
 section {
-  margin-bottom: 5rem !important;
+  margin-bottom: 120px !important;
 }
 
 body {
@@ -280,4 +280,98 @@ body {
   margin-top: 56px;
   padding: 16px 28px !important;
   border-radius: 12px;
+}
+
+#expert-chef .left-content {
+  position: relative;
+}
+#expert-chef .left-content .expert-chef-photo {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 24px;
+}
+#expert-chef .left-content .expert-chef-experience {
+  position: absolute;
+  top: 10%;
+  right: -10%;
+}
+#expert-chef .left-content .expert-chef-experience .card {
+  border: 0;
+  border-radius: 24px;
+}
+#expert-chef .left-content .expert-chef-experience .card .card-body {
+  padding: 25px 35px !important;
+}
+#expert-chef .left-content .expert-chef-experience-img {
+  width: 80px;
+  margin-bottom: 12px;
+}
+#expert-chef .left-content .expert-chef-experience-year {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 0;
+}
+#expert-chef .left-content .expert-chef-experience-title {
+  font-size: 16px;
+  color: var(--gray-color);
+  margin-bottom: 0;
+}
+#expert-chef .left-content .expert-chef-restaurant {
+  position: absolute;
+  bottom: 10%;
+  left: -10%;
+}
+#expert-chef .left-content .expert-chef-restaurant .card {
+  border: 0;
+  border-radius: 24px;
+}
+#expert-chef .left-content .expert-chef-restaurant .card .card-body {
+  padding: 18px !important;
+}
+#expert-chef .left-content .expert-chef-restaurant-img {
+  width: 99px;
+}
+#expert-chef .right-content .text-title-black {
+  margin-bottom: 32px;
+}
+#expert-chef .right-content .expert-chef-item {
+  border: 0;
+  border-radius: 24px;
+  background: transparent;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+#expert-chef .right-content .expert-chef-item-food {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray-color);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+#expert-chef .right-content .expert-chef-item-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-bottom: 6px;
+}
+#expert-chef .right-content .expert-chef-item-location {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gray-color);
+}
+#expert-chef .right-content .expert-chef-item-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cream-color);
+  text-decoration: none;
+  display: none;
+}
+#expert-chef .right-content .expert-chef-active {
+  background: #fff !important;
+  cursor: default !important;
+}
+#expert-chef .right-content .expert-chef-active .expert-chef-item-link {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

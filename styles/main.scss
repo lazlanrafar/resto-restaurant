@@ -29,7 +29,7 @@ button {
 
 // Set Default
 section {
-  margin-bottom: 5rem !important;
+  margin-bottom: 120px !important;
 }
 
 // body
@@ -345,5 +345,116 @@ body {
     margin-top: 56px;
     padding: 16px 28px !important;
     border-radius: 12px;
+  }
+}
+
+#expert-chef {
+  .left-content {
+    position: relative;
+
+    .expert-chef {
+      &-photo {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+
+      &-experience {
+        position: absolute;
+        top: 10%;
+        right: -10%;
+
+        .card {
+          border: 0;
+          border-radius: 24px;
+
+          .card-body {
+            padding: 25px 35px !important;
+          }
+        }
+
+        &-img {
+          width: 80px;
+          margin-bottom: 12px;
+        }
+        &-year {
+          font-size: 18px;
+          font-weight: 600;
+          color: var(--black-color);
+          margin-bottom: 0;
+        }
+        &-title {
+          font-size: 16px;
+          color: var(--gray-color);
+          margin-bottom: 0;
+        }
+      }
+      &-restaurant {
+        position: absolute;
+        bottom: 10%;
+        left: -10%;
+
+        .card {
+          border: 0;
+          border-radius: 24px;
+
+          .card-body {
+            padding: 18px !important;
+          }
+        }
+
+        &-img {
+          width: 99px;
+        }
+      }
+    }
+  }
+
+  .right-content {
+    .text-title-black {
+      margin-bottom: 32px;
+    }
+    .expert-chef-item {
+      border: 0;
+      border-radius: 24px;
+      background: transparent;
+      margin-bottom: 25px;
+      cursor: pointer;
+
+      &-food {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--gray-color);
+        text-transform: uppercase;
+        margin-bottom: 6px;
+      }
+      &-name {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--black-color);
+        margin-bottom: 6px;
+      }
+      &-location {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--gray-color);
+      }
+      &-link {
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--cream-color);
+        text-decoration: none;
+        display: none;
+      }
+    }
+
+    .expert-chef-active {
+      background: #fff !important;
+      cursor: default !important;
+
+      .expert-chef-item-link {
+        display: block;
+      }
+    }
   }
 }
